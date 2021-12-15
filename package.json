@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "axios": "^0.24.0",
+    "express": "^4.17.1",
+    "fetch": "^1.1.0",
+    "nodemon": "^2.0.15"
+  },
+  "name": "resumindo-api",
+  "version": "1.0.0",
+  "main": "indwx.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
