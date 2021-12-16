@@ -1,7 +1,6 @@
 //npms a serem usadas na API
 const express = require('express');
 const app = express();
-const axios = require('axios');
 const http = require('https');
 
 //variável salva para ser usada depois, caso ela não existisse aqui
@@ -33,6 +32,7 @@ app.get('/:id', async(req, resp) => {
 
                 //criamos uma forma de encontrar o id que pedimos em meio a lista passada para nós.
                 const selectedData = listaFormatada.find((elem) => elem.id === Number(req.params.id));
+                
                 //por fim, pedimos para a informação da lista ser pega e tranformada naquela
                 //variável declarada no começo, caso ela fosse declarada agora, o código quebra.
                 const { title } = await selectedData;
